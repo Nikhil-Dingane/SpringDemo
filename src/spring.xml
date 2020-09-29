@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-	<bean name="parenttriangle" class="org.kaushik.javabrains.Triangle">
-		<property name="points">
-			<list>
-				<ref bean="pointA"/>
-			</list>
-		</property>
-	</bean>	
-	<bean id="triangle" class="org.kaushik.javabrains.Triangle" parent="parenttriangle">
-		<property name="points">
-			<list merge="true">
-				<ref bean="pointB"/>
-			</list>
-		</property>
+	<bean id="triangle" class="org.kaushik.javabrains.Triangle" autowire="byName">
 	</bean>
 
 	<bean id="pointA" class="org.kaushik.javabrains.Point">
