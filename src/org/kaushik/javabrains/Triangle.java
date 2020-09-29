@@ -10,7 +10,6 @@ public class Triangle{
 	private Point pointA;
 	private Point pointB;
 	private Point pointC;
-	private ApplicationContext context;
 	
 	public void draw() {
 		System.out.println("Point A ( " + getPointA().getX() + " , " + getPointA().getY() + " )");
