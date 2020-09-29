@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-	<bean id="triangle" class="org.kaushik.javabrains.Triangle" autowire="byName">
+	<bean name="parenttriangle" class="org.kaushik.javabrains.Triangle">
+		<property name="pointA" ref="pointA"></property>
+	</bean>	
+	<bean id="triangle1" class="org.kaushik.javabrains.Triangle" parent="parenttriangle">
+		<property name="pointB" ref="pointB"></property>
+		<property name="pointC" ref="pointC"></property>
 	</bean>
-
+	<bean id="triangle2" class="org.kaushik.javabrains.Triangle" parent="parenttriangle">
+		<property name="pointB" ref="pointB"></property>
+	</bean>
+	
 	<bean id="pointA" class="org.kaushik.javabrains.Point">
 		<property name="x" value="0"/>
 		<property name="y" value="0"/>
