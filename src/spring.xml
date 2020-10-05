@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
-<beans default-init-method="myInit" default-destroy-method="myDestroy">
-	<bean id="triangle" class="org.kaushik.javabrains.Triangle" autowire="byName">
+<beans default-destroy-method="myDestroy">
+	<bean id="triangle" class="org.kaushik.javabrains.Triangle">
+		<property name="pointA" ref="pointA"></property>
+		<property name="pointB" ref="pointB"></property>
+		<property name="pointC" ref="pointC"></property>
 	</bean>
 
 	<bean id="pointA" class="org.kaushik.javabrains.Point">
@@ -17,6 +20,9 @@
 	<bean id="pointC" class="org.kaushik.javabrains.Point">
 		<property name="x" value="20"/>
 		<property name="y" value="0"/>
+	</bean>
+	<bean id="circle" class="org.kaushik.javabrains.Circle">
+		<property name="center" ref="pointA"></property>
 	</bean>
 
 </beans>
