@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans default-destroy-method="myDestroy">
-	<bean id="triangle" class="org.kaushik.javabrains.Triangle">
+	<!-- <bean id="triangle" class="org.kaushik.javabrains.Triangle">
 		<property name="pointA" ref="pointA"></property>
 		<property name="pointB" ref="pointB"></property>
 		<property name="pointC" ref="pointC"></property>
-	</bean>
+	</bean> -->
 
 	<bean id="pointA" class="org.kaushik.javabrains.Point">
 		<property name="x" value="0"/>
 		<property name="y" value="0"/>
 	</bean>
 
-	<bean id="pointB" class="org.kaushik.javabrains.Point">
+	<!-- <bean id="pointB" class="org.kaushik.javabrains.Point">
 		<property name="x" value="-20"/>
 		<property name="y" value="0"/>
 	</bean>
@@ -20,9 +20,10 @@
 	<bean id="pointC" class="org.kaushik.javabrains.Point">
 		<property name="x" value="20"/>
 		<property name="y" value="0"/>
-	</bean>
+	</bean> -->
 	<bean id="circle" class="org.kaushik.javabrains.Circle">
 	</bean>
 
-	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+	<!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean> -->
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
 </beans>
