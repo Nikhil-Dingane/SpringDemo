@@ -11,7 +11,7 @@
 		<property name="pointC" ref="pointC"></property>
 	</bean> -->
 
-	<bean id="center" class="org.kaushik.javabrains.Point">
+	<bean id="pointA" class="org.kaushik.javabrains.Point">
 		<qualifier value="circleRealted"></qualifier>
 		<property name="x" value="0"/>
 		<property name="y" value="0"/>
@@ -29,6 +29,5 @@
 	<bean id="circle" class="org.kaushik.javabrains.Circle">
 	</bean>
 
-	<!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean> -->
-	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+	<context:annotation-config/>
 </beans>
