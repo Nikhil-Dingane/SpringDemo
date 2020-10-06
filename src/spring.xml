@@ -12,7 +12,7 @@
 		<property name="y" value="0"/>
 	</bean>
 
-	<!-- <bean id="pointB" class="org.kaushik.javabrains.Point">
+	<bean id="pointB" class="org.kaushik.javabrains.Point">
 		<property name="x" value="-20"/>
 		<property name="y" value="0"/>
 	</bean>
@@ -20,7 +20,7 @@
 	<bean id="pointC" class="org.kaushik.javabrains.Point">
 		<property name="x" value="20"/>
 		<property name="y" value="0"/>
-	</bean> -->
+	</bean>
 	<bean id="circle" class="org.kaushik.javabrains.Circle">
 	</bean>
 
