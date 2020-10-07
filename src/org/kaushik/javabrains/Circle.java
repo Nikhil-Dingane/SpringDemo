@@ -13,7 +13,7 @@ public class Circle implements Shape {
 		return center;
 	}
 	
-	@Resource(name = "pointC")
+	@Resource
 	public void setCenter(Point center) {
 		this.center = center;
 	}

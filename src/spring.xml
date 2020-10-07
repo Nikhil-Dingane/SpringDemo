@@ -22,7 +22,7 @@
 		<property name="y" value="0"/>
 	</bean>
 
-	<bean id="pointC" class="org.kaushik.javabrains.Point">
+	<bean id="center" class="org.kaushik.javabrains.Point">
 		<property name="x" value="20"/>
 		<property name="y" value="0"/>
 	</bean>
