@@ -26,8 +26,17 @@
 		<property name="x" value="20"/>
 		<property name="y" value="0"/>
 	</bean>
-	<bean id="circle" class="org.kaushik.javabrains.Circle">
+	<!-- <bean id="circle" class="org.kaushik.javabrains.Circle">
+	</bean> -->
+	
+	<bean name="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<value>mymessages</value>
+		</property>
 	</bean>
-
+	
 	<context:annotation-config/>
+	
+	<context:component-scan base-package="org.kaushik.javabrains"/>
+	
 </beans>
