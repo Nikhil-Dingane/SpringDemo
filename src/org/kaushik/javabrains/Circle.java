@@ -34,9 +34,10 @@ public class Circle implements Shape {
 	}
 
 	public void draw() {
-		System.out.println("Drawing Circle");
-		System.out.println("Circle: Point is: (" + center.getX() + ", " + center.getY() + ")");
-		System.out.println(this.messageSource.getMessage("greeting",null,"Default greeting",null));
+		System.out.println(this.messageSource.getMessage("drawing.circle",null,"Default drawing message",null));
+		System.out.println(this.messageSource.getMessage("drawing.point",new Object[] {center.getX(),center.getY()},"Default point message",null));
+		//System.out.println("Circle: Point is: (" + center.getX() + ", " + center.getY() + ")");
+		
 	}
 	
 	@PostConstruct
