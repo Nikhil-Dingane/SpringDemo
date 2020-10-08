@@ -19,6 +19,6 @@ public class DrawingApp {
 		
 		shape.draw();
 		
-		System.out.println(context.getMessage("greeting",null,"Default greeting",null));
+		//System.out.println(context.getMessage("greeting",null,"Default greeting",null));
 	}
 }
